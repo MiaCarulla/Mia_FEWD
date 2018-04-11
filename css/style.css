@@ -1,0 +1,239 @@
+/*******************
+Colours:
+  page titles		yellow: #fcd272;
+  text				black: #000000;
+  titles			light grey: #cccccc;
+  nav				darker grey: #666666;
+
+Fonts:
+  	- Lato (Gotham) - Titles // Helvetica
+  	- Open Sans - TEXT
+
+
+
+/*******************
+  BASE SETUP
+*******************/
+*, *:before, *:after {
+  	box-sizing: border-box;
+}
+
+.container {
+  	margin: 0 auto;
+  	width: 95%;
+  	
+}
+
+
+/*******************
+  FONT SETUP
+*******************/
+h2.titles{
+	font-family: 'helvetica', sans-serif; 
+	margin:0;
+	font-weight:900;
+	font-size:90px;
+
+	/*This is recently added to rotate the main titles*/
+	/*-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position:relative;*/
+   }
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/*******************
+  GENERAL SETUP
+*******************/
+a{
+	text-decoration: none;
+	color:#666666;
+	text-transform:uppercase;
+	font-weight:300;
+	font-family: Helvetica;
+
+}
+
+.titles{
+	text-transform:uppercase;
+	font-size:50px;
+	font-weight: ;
+	color: #cccccc;
+}
+
+p{
+	margin:0;
+}
+
+/*******************
+  HEADER & HOME
+*******************/
+header{
+	/*background: red;*/
+}
+header nav ul{
+	display:flex;
+	justify-content:flex-end;
+	flex-flow: row wrap;
+}
+
+ul{
+	margin:0;
+}
+
+li{
+	display:inline-block;
+	padding: 10px;
+}
+
+.home{
+	display:flex;
+	/*background:green;*/
+	align-items:center;
+}
+
+img.logo {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+/*******************
+  PORTFOLIO
+*******************/
+.portfolio{
+	background: pink;
+}
+
+.block{
+	position: relative;
+  	width: 100%;
+  	display:flex;
+}
+
+.image {
+ 	display:block;
+  	width: 100%;
+  	height: 100%;
+}
+
+.overlay {
+  	
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 100%;
+  	width: 100%;
+  	opacity: 0;
+  	transition: .2s ease;
+  	background-color:#fcd272;
+}
+
+.block:hover .overlay {
+  	opacity: 1;
+}
+
+.text {
+  	color: white;
+  	font-size: 20px;
+  	position: absolute;
+  	font-family: 'Open Sans', sans-serif;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+/*.projects{
+	margin:auto;
+	padding:150px;
+}
+
+
+.block{
+	padding: 30px;	
+	position: relative;
+}
+
+/*.block:hover {
+	cursor: pointer;
+}*/
+
+/*.tile-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay{
+	/*display:none;*/
+  /*position: absolute;*/
+/*  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}*/
+
+/*.block:hover, .overlay {
+  opacity: 1;
+/*}*/
+
+/*.hide {
+  color: blue;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}*/
+
+
+/*******************
+  OTHER
+*******************/
+.other{
+	background: tan; 
+}
+
+
+/*******************
+ ABOUT
+*******************/
+.about{
+	background: papayawhip;
+}
+
+/*******************
+CONTACT
+*******************/
+.contact{
+ 	background: grey;
+}
+
+/*******************
+FOOTER
+*******************/
+.social-media{
+	background: yellow;
+	display:flex;
+}
+
+.social{
+	display:flex;
+	justify-content:center;
+}

@@ -3,12 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Mia Carulla</title>
+			
+		<!--CSS links-->
 		<link rel="stylesheet" href="./css/normalise.css">
 		<link rel="stylesheet" href="./css/style.css">
+		
+		<!--Google fonts links-->
+		 <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans" rel="stylesheet"> 
+		 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		
+		<!--responsive tag-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 	<body>
 		<header>
-			<div class="container clearfix">
+			<div class="container">
 				<nav>
 					<ul>
 						<li><a href="#">Home</a></li>
@@ -23,62 +32,114 @@
 
 		<section class="home">
 			<div class="container">
-				<img src="" alt="Logo">
+				<img src="./images/Logo Mia-01.png" alt="Logo" class="logo">
 			</div>
 		</section>
 
 		<section class="portfolio">
-			<div class="container">
-				<h2 class="titles">Portfolio</h2>
-					<ul class="clearfix">
+			<div class="container flex">
+					<h2 class="titles">Portfolio</h2>
+					
+					<div class="block">
+			 		 	<img src="./images/280.png" alt="ptoject-image" class="image">
+			  			<div class="overlay">
+			   				 <div class="text">JAMMIE DODGERS</div>
+			  			</div>
+					</div>
+
+					<div class="block">
+			 		 	<img src="./images/280.png" alt="project-image" class="image">
+			  			<div class="overlay">
+			   				 <div class="text">HUGO BOSS</div>
+			  			</div>
+					</div>
+
+					<div class="block">
+			 		 	<img src="./images/280.png" alt="project-image" class="image">
+			  			<div class="overlay">
+			   				 <div class="text">MAN-GO</div>
+			  			</div>
+					</div>
+
+
+
+					<!-- <ul class="projects">
+
 						<li class="block">
-							<img src="" alt="">
-							<a class="hide" href="">Name of Project 1</a>
+							<img src="./images/280.png" alt="" class="tile-image">
+								<div class="overlay">
+									<div class="hide">A TOUCH OF HOME</div>
+								</div>
+						
 						</li>
 						<li class="block">
-							<img src="" alt="">
-							<a class="hide" href="">Name of Project2 </a>
+							<img src="./images/280.png" alt="" class="tile-image">
+								<div class="overlay">
+									<a class="hide" href="">JAMMIE DODGERS</a>
+								</div>
 						</li>
+						
 						<li class="block">
-							<img src="" alt="">
-							<a class="hide" href="">Name of Project 3</a>
+							<img src="./images/280.png" alt="" class="tile-image">
+								<div class="overlay">
+									<a class="hide" href="">MAN-GO</a>	
+								</div>
 						</li>
+					
 						<li class="block">
-							<img src="" alt="">
-							<a class="hide" href="">Name of Project 4</a>
+							<img src="./images/280.png" alt="" class="tile-image">
+								<div class="overlay">
+									<a class="hide" href="">BUMBLE GO</a>
+								</div>
 						</li>
+					
 						<li class="block">
-							<img src="" alt="">
-							<a class="hide" href="">Name of Project 5</a>
+							<img src="./images/280.png" alt="" class="tile-image">
+								<div class="overlay">
+									<a class="hide" href="">ASPALL</a>
+								</div>
 						</li>
+					
 						<li class="block">
-							<img src="" alt="">
-							<a class="hide" href="">Name of Project 6</a>
+							<img src="./images/280.png" alt="" class="tile-image">
+								<div class="overlay">
+									<a class="hide" href="">HANDS FOUR PAWS</a>
+								</div>
 						</li>
+					
 						<li class="block">
-							<img src="" alt="">
-							<a class="hide" href="">Name of Project 7</a>
+							<img src="./images/280.png" alt="" class="tile-image">
+								<div class="overlay">
+									<a class="hide" href="">L'OREAL</a>
+								</div>
 						</li>
+					
 						<li class="block">
-							<img src="" alt="">
-							<a class="hide" href="">Name of Project 8</a>
+							<img src="./images/280.png" alt="" class="tile-image">
+								<div class="overlay">
+									<a class="hide" href="">HUGO BOSS</a>
+								</div>
 						</li>
+					
 						<li class="block">
-							<img src="" alt="">
-							<a class="hide" href="">Name of Project 9</a>
+							<img src="./images/280.png" alt="" class="tile-image">
+								<div class="overlay">
+									<a class="hide" href="">GLENMORANGIE</a>
+								</div>	
 						</li>
-					</ul>
+					</ul> -->
 			</div>
 		</section>
+
 
 		<section class="other">
 			<div class="container">
 				<h2 class="titles">Other</h2>
 				<ul>
 					<li class="block"><a class="" href="">freelance</a></li>
-						<img src="#" alt="freelance-photo">
-					<li class="block"><a class="" href=""></a>photography</li>
-						<img src="#" alt="photography-photo">
+						<img src="./images/480.png" alt="freelance-photo">
+					<li class="block"><a class="" href="">photography</a></li>
+						<img src="./images/480.png" alt="photography-photo">
 				</ul>
 			</div>
 		</section>
@@ -86,12 +147,13 @@
 
 		<section class="about">
 			<div class="container">
-				<h2 class="titles">About Mia</h2>
-				<img src="#" alt="about Mia picture" class="about-image">
+				<h2 class="titles">Mia</h2>
+				<img src="./images/profile_picture.jpg" alt="about Mia picture" class="about-image">
 					<p class="about-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rerum ratione natus adipisci, autem saepe harum hic exercitationem sit. Eaque, expedita a corporis nobis consequuntur eveniet doloribus minus, inventore quam!</p>
 			</div>
-			
 		</section>
+
+
 
 		<section class="contact">
 			<div class="container">
@@ -114,18 +176,26 @@
 						<textarea placeolder="Say Hello!" name="message" id="" cols="30" rows="10"></textarea>
 						<button class="">Send</button>
 					</fieldset>
-
 				</form>
 			</div>
 		</section>
 
+
+
 		<footer class="social-media">
 			<div class="container">
-				<img src="" alt="linkedin">
-				<img src="" alt="instagram">
-				<img src="" alt="twitter">
+				<ul class="social">
+					<li class="icons">
+						<img src="" alt=""><a href="https://www.linkedin.com/in/mia-carulla-ferrer-48a395109/">Linkedin</a></li>
+					<li class="icons">
+						<img src="" alt=""><a href="https://www.instagram.com/theyellow_wall/">Instagram</a></li>
+					<li class="icons">
+						<img src="" alt=""><a href="https://twitter.com/MiaCarulla1">Twitter</a></li>
+				</ul>
 			</div>
 		</footer>
+
+
 
 		<script src="./js/jquery-3.3.1.min.js"></script>
 		<script src="./js/main.js"></script>
