@@ -29,10 +29,10 @@ Fonts:
   FONT SETUP
 *******************/
 h2.titles{
-	font-family: 'helvetica', sans-serif; 
+	font-family: 'Montserrat', sans-serif;
 	margin:0;
 	font-weight:900;
-	font-size:90px;
+	font-size:50px;
 
 	/*This is recently added to rotate the main titles*/
 	/*-webkit-transform: rotate(90deg);
@@ -92,9 +92,16 @@ li{
 	padding: 10px;
 }
 
+.menu{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:300;
+}
+.menu:hover{
+  color:#fcd272;
+}
+
 .home{
 	display:flex;
-	/*background:green;*/
 	align-items:center;
 }
 
@@ -107,34 +114,37 @@ img.logo {
 /*******************
   PORTFOLIO
 *******************/
-.portfolio{
-	background: pink;
+/*.portfolio{
+  height: 300px;
+}*/
+
+.container.flex {
+  display: flex;
 }
 
 .block{
 	position: relative;
-  	width: 100%;
-  	display:flex;
+  width: 100%;
+  display: flex;
 }
 
 .image {
  	display:block;
-  	width: 100%;
-  	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .overlay {
-  	
-  	position: absolute;
-  	top: 0;
-  	bottom: 0;
-  	left: 0;
-  	right: 0;
-  	height: 100%;
-  	width: 100%;
-  	opacity: 0;
-  	transition: .2s ease;
-  	background-color:#fcd272;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .2s ease;
+  background-color:#fcd272;
 }
 
 .block:hover .overlay {
@@ -153,83 +163,27 @@ img.logo {
   	text-align: center;
 }
 
-/*.projects{
-	margin:auto;
-	padding:150px;
-}
-
-
-.block{
-	padding: 30px;	
-	position: relative;
-}
-
-/*.block:hover {
-	cursor: pointer;
-}*/
-
-/*.tile-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.overlay{
-	/*display:none;*/
-  /*position: absolute;*/
-/*  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}*/
-
-/*.block:hover, .overlay {
-  opacity: 1;
-/*}*/
-
-/*.hide {
-  color: blue;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}*/
-
 
 /*******************
   OTHER
 *******************/
-.other{
-	background: tan; 
+.about-mia{
+  
 }
-
 
 /*******************
  ABOUT
 *******************/
-.about{
-	background: papayawhip;
-}
 
 /*******************
 CONTACT
 *******************/
-.contact{
- 	background: grey;
-}
+
 
 /*******************
 FOOTER
 *******************/
 .social-media{
-	background: yellow;
 	display:flex;
 }
 
