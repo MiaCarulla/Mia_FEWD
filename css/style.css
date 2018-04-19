@@ -33,15 +33,48 @@ h2.titles{
 	margin:0;
 	font-weight:900;
 	font-size:50px;
+  margin-bottom:50px;
+  color:#e9e9e9;
+  letter-spacing:25px;
+  }
 
-	/*This is recently added to rotate the main titles*/
-	/*-webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    position:relative;*/
-   }
+
+h2.titles.portfolio{
+  transform: rotate(-90deg) translate(-78%, -392%);
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  padding-bottom:0;
+  margin-bottom:0;
+}
+
+
+h2.titles.other{
+  transform: rotate(-90deg) translate(-94%, -204%);
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  padding-bottom:0;
+  margin-bottom:0;
+
+}
+
+h2.titles.about{
+  transform: rotate(-90deg) translate(-157%, -88%);
+  margin-bottom:0;
+  z-index: 1;
+  position: absolute;
+
+}
+
+h2.titles.contact{
+  padding-top:0;
+  margin-bottom:0;
+  transform: rotate(-90deg) translate(-32%, -298%);
+  z-index: 1;
+  position: absolute;
+}
+
 
 body{
 	font-family: 'Open Sans', sans-serif;
@@ -56,14 +89,13 @@ a{
 	color:#666666;
 	text-transform:uppercase;
 	font-weight:300;
-	font-family: Helvetica;
+	font-family: 'Montserrat', sans-serif;
 
 }
 
 .titles{
 	text-transform:uppercase;
 	font-size:50px;
-	font-weight: ;
 	color: #cccccc;
 }
 
@@ -75,21 +107,35 @@ p{
   HEADER & HOME
 *******************/
 header{
-	/*background: red;*/
-}
-header nav ul{
-	display:flex;
-	justify-content:flex-end;
-	flex-flow: row wrap;
+	background: white;
+  border-bottom: 14px;
+  position:fixed;
+  z-index: 10;
+  width: 100%;
+  /*border-bottom:  solid black 1px;*/
+  -webkit-box-shadow: 0px 4px 4px -1px rgba(227,227,227,1);
+  -moz-box-shadow: 0px 4px 4px -1px rgba(227,227,227,1);
+  box-shadow: 0px 4px 4px -1px rgba(227,227,227,1);
 }
 
+header nav ul{
+  display:flex;
+	justify-content:center;
+	flex-flow: row wrap;
+  justify-content:space-around;
+}
+
+
 ul{
-	margin:0;
+/*   border-bottom: 20px;
+*/
+margin:0;
 }
 
 li{
 	display:inline-block;
 	padding: 10px;
+  letter-spacing: 5px;
 }
 
 .menu{
@@ -98,6 +144,7 @@ li{
 }
 .menu:hover{
   color:#fcd272;
+  transition:0.2s;
 }
 
 .home{
@@ -109,23 +156,40 @@ img.logo {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+  margin-top:100px;
+  margin-bottom:200px;
+  width:50%;
+  height:50%;
 }
 
 /*******************
   PORTFOLIO
 *******************/
-/*.portfolio{
-  height: 300px;
-}*/
+.portfolio{
+/*background-color:grey;*/ 
+ padding-bottom:50px;
+
+
+}
 
 .container.flex {
+  padding-top:30px;
   display: flex;
+  flex-flow: row wrap;
+  margin-right:0;
+  margin-top:30px;
+  margin-bottom:30px;
+  margin-left:150px;
+  width:80%;
 }
 
 .block{
-	position: relative;
-  width: 100%;
+  position: relative;
+  width: 30.333333%;
   display: flex;
+  justify-content:space-evenly;
+  cursor: pointer;
+  margin: 7px;
 }
 
 .image {
@@ -144,7 +208,7 @@ img.logo {
   width: 100%;
   opacity: 0;
   transition: .2s ease;
-  background-color:#fcd272;
+  background-color: #fcd272; /*#fcd272aa; for Transparency*/
 }
 
 .block:hover .overlay {
@@ -155,7 +219,8 @@ img.logo {
   	color: white;
   	font-size: 20px;
   	position: absolute;
-  	font-family: 'Open Sans', sans-serif;
+  	font-family: 'Montserrat', sans-serif;
+    font-weight:800;
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
@@ -167,27 +232,292 @@ img.logo {
 /*******************
   OTHER
 *******************/
-.about-mia{
-  
+.other{
+/*  background-color:black;
+*/*/  padding-top:100px;
+  padding-bottom:100px;
 }
+.other-title{
+  position: absolute;
+  z-index: 1;
+  transform: translate(55%, -440%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /* width: 100%;
+  height: 100%;*/
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size:40px;
+}
+
+.container.flex.other{
+  justify-content:space-around;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  margin:0;
+  margin-top:200px;
+  margin-left:112px;
+}
+
 
 /*******************
  ABOUT
 *******************/
+.about-mia{
+  display:flex;
+  padding-top:150px;
+  padding-bottom:250px;
+}
 
+.about-image{
+  width: 30%;
+  height: 30%;
+  margin-bottom: 90px;
+  margin-left:181px;
+}
+
+.about-info{
+  display: flex;
+  justify-content: center;
+  height: 100;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right:30px;
+}
+
+.blog{
+
+}
 /*******************
 CONTACT
 *******************/
+.contact{
+  display:flex;
+/*  background-color:gray;
+*/  padding-top:200px;
+  
+}
+.container.flex.contact{
+  justify-content:space-between;
+  padding:0;
+  margin-bottom: 50px;
+  padding-bottom: 100px;
+  margin-top:0;
+}
+
+p.contact-name{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:3px;
+}
+
+.contact-form{
+      width: 500px;
+
+}
+
+hr{
+    width: 50px;
+    border: 2px solid #fcd272;
+    margin:30px;
+}
+
+h4.email a, h4.en-phone, h4.es-phone{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight:300;
+}
+
+h4.email a:hover{
+    color:#fcd272;
+    transition:0.5s;
+}
+
+form{
+  width:600px;
+}
+
+input.button{
+  width: 150px;
+  font-size: 10px;
+}
+
+i.fas.fa-mobile, i.fas.fa-envelope{
+  color:black;
+}
+
+
+/*******************
+ FORM
+ *******************/
+
+      .form .text-input, .form .textarea, .form .label, .form .button {
+        padding: 1em 1.5em;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        outline: none;
+        line-height: normal;
+        border: 1px solid transparent;
+        border-radius: 0;
+      }
+
+      .form .text-input, .form .textarea {
+        /*font: inherit;*/
+        line-height: normal;
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        padding-left: 0;
+        border-bottom-color: rgba(0, 0, 0, 0.3);
+        background: transparent;
+        outline: none;
+        color: black;
+      }
+      .form .text-input:placeholder, .form .textarea:placeholder {
+        color: rgba(0, 0, 0, 0.7);
+      }
+      .form .text-input:-webkit-autofill, .form .textarea:-webkit-autofill {
+        box-shadow: 0 0 0px 1000px white inset;
+        border-top-color: white;
+        border-left-color: white;
+        border-right-color: white;
+      }
+      .form .error.text-input, .form .error.textarea, .error .form .text-input, .form .error .text-input, .error .form .textarea, .form .error .textarea {
+        border-color: transparent transparent red transparent;
+      }
+      .form:not(.has-floated-label) .text-input:active, .form:not(.has-floated-label) .textarea:active, .form:not(.has-floated-label) .text-input:focus, .form:not(.has-floated-label) .textarea:focus {
+        border-color: transparent transparent black transparent;
+      }
+
+      .form .label {
+        position: absolute;
+        z-index: 10;
+        pointer-events: none;
+        padding-left: 0;
+      }
+
+      .form .label {
+        top: 0;
+        left: 0;
+        color: rgba(0, 0, 0, 0.7);
+        -webkit-transition: color 0.3s;
+        transition: color 0.3s;
+      }
+      .active .form .label, .form .active .label {
+        font-size: 0.75em;
+        line-height: 1;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 0;
+        color: rgba(0, 0, 0, 0.7);
+        background: white;
+      }
+      .focus .form .label, .form .focus .label {
+        color: black;
+      }
+
+      .form.has-floated-label .field:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        border-bottom: 1px solid black;
+        -webkit-transition: width 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transition: width 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      }
+
+      .form.has-floated-label .field.focus:after {
+        width: 100%;
+      }
+
+      .form .button {
+       /* font: inherit;*/
+        line-height: normal;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.14286em;
+      }
+      .form .button:hover, .form .button:focus, .form .button:active {
+        color: white;
+        background: black;
+      }
+      .form .button:active {
+        position: relative;
+        top: 1px;
+        left: 1px;
+      }
+
+      .form {
+        max-width: 50em;
+        margin: 0 auto;
+        padding: 1em 2em;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .form .field {
+        position: relative;
+        width: 100%;
+        margin-bottom: 1.5em;
+        float: left;
+      }
+      @media screen and (min-width: 40em) {
+        .form .field.half {
+          width: calc(50% - 2em);
+          margin-right: 2em;
+        }
+        .form .field.half + .half {
+          margin-left: 2em;
+          margin-right: 0;
+        }
+      }
+      .form .field:last-child {
+        float: right;
+        width: auto;
+      }
+      .form .textarea {
+        max-width: 100%;
+      }
+
+      svg path {
+        fill: black;
+      }
+
+ 
 
 
 /*******************
 FOOTER
 *******************/
 .social-media{
-	display:flex;
+	background-color:black;
+  display:flex;
 }
 
 .social{
 	display:flex;
 	justify-content:center;
+  margin-bottom:20px;
+}
+ul.social{
+  margin:0;
+}
+
+i{
+  padding-top:10px;
+  color:white;
+  font-size:25px;
+}
+
+i:hover{
+  color:#fcd272;
+  transition:0.5s;
+  cursor:pointer;
 }

@@ -8,33 +8,24 @@
 		<link rel="stylesheet" href="./css/normalise.css">
 		<link rel="stylesheet" href="./css/style.css">
 		
-		<!--Google fonts links-->
-		 <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans" rel="stylesheet"> 
-		 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<!--Google Fonts links & Font Awesome Links-->
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-		
-		<!--responsive tag-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+		<!--Responsive Tag-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 	<body>
 		<header>
 			<div class="container">
-		<!--		<ul class="menu__list">
-						<li class="menu__item menu__item--current"><a href="#" class="menu__link"><span class="menu__helper">Home</span></a></li>
-						<li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">Portfolio</span></a></li>
-						<li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">Other</span></a></li>
-						<li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">Mia</span></a></li>
-						<li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">Contact</span></a></li>
-					</ul>
-				</nav>-->
-
 				<nav>
 					<ul>
-						<li><a class="menu" href="#">Home</a></li>
-						<li><a class="menu" href="#">Portfolio</a></li>
-						<li><a class="menu" href="#">Other</a></li>
-						<li><a class="menu" href="#">About</a></li>
-						<li><a class="menu" href="#">Contact</a></li>
+						<li><a class="menu" href="#portfolio">Portfolio</a></li>
+						<li><a class="menu" href="#other">Other</a></li>
+						<li><a class="menu" href="#about">About</a></li>
+						<li><a class="menu" href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -46,8 +37,8 @@
 			</div>
 		</section>
 
-		<section class="portfolio">
-			<h2 class="titles">P o r t f o l i o </h2>
+		<section id="portfolio" class="portfolio container">
+			<h2 class="titles portfolio">Portfolio</h2>
 			<div class="container flex">
 					<div class="block">
 			 		 	<img src="./images/JD-square.jpg" alt="ptoject-image" class="image">
@@ -64,7 +55,7 @@
 					</div>
 
 					<div class="block">
-			 		 	<img src="./images/280.png" alt="project-image" class="image">
+			 		 	<img src="./images/mango-sq.jpg" alt="project-image" class="image">
 			  			<div class="overlay">
 			   				 <div class="text">MAN-GO</div>
 			  			</div>
@@ -92,21 +83,21 @@
 					</div>
 
 					<div class="block">
-			 		 	<img src="./images/280.png" alt="project-image" class="image">
+			 		 	<img src="./images/h4p-sq.jpg" alt="project-image" class="image">
 			  			<div class="overlay">
 			   				 <div class="text">HANDS FOUR PAWS</div>
 			  			</div>
 					</div>
 
 					<div class="block">
-			 		 	<img src="./images/280.png" alt="project-image" class="image">
+			 		 	<img src="./images/loreal-sq.jpg" alt="project-image" class="image">
 			  			<div class="overlay">
 			   				 <div class="text">L'OREAL</div>
 			  			</div>
 					</div>
 
 					<div class="block">
-			 		 	<img src="./images/280.png" alt="project-image" class="image">
+			 		 	<img src="./images/glenm-sq.jpg" alt="project-image" class="image">
 			  			<div class="overlay">
 			   				 <div class="text">GLENMORANGIE</div>
 			  			</div>
@@ -115,51 +106,79 @@
 		</section>
 
 
-		<section class="other">
-			<div class="container flex">
-				<h2 class="titles">o t h e r</h2>
-				<ul>
-					<img src="./images/480.png" alt="freelance-photo">
-					<li class="block"><a class="" href="">freelance</a></li>
-					<li class="block"><a class="" href="">photography</a></li>
-						<img src="./images/480.png" alt="photography-photo">
-				</ul>
-			</div>
-		</section>
+		<section id="other" class="other container">
+				<h2 class="titles other">other</h2>
+					<div class="container flex other">
 
+					<div class="container-freelance">
+						<img src="./images/380.jpg" alt="freelance-photo">
+						<a class="other-title" href="">freelance</a>
+					</div>
 
-		<section class="about">
-			<div class="container">
-				<h2 class="titles">m i a</h2>
-				<img src="./images/profile_picture.jpg" alt="about Mia picture" class="about-image">
-				<p class="about-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rerum ratione natus adipisci, autem saepe harum hic exercitationem sit. Eaque, expedita a corporis nobis consequuntur eveniet doloribus minus, inventore quam!</p>
+					<div class="container-photography">
+						<img src="./images/380.jpg" alt="photography-photo">
+						<a class="other-title" href="">photography</a>
+					</div>
 			</div>
 		</section>
 
 
 
-		<section class="contact">
+
+		<section id="about" class="about">
 			<div class="container">
-				<h2 class="titles">c o n t a c t</h2>
-				<img src="#" alt="contact-image">
-					<hr>
-						<p class="contact-name">Mia Carulla Ferrer</h3>
-							<p class="contact-location">London / England</p>
-					<hr>
-						<img src="#" alt="email-image">
-							<h4 class="email"><a href="email">mcarullaferrer@gmail.com</a></h4>
-						<img src="#" alt="phone-image">
-							<h4 class="en-phone">+44 74 72 180 776</h4>
-							<h4 class="es-phone">+34 630 414 719</h4>
-				
-				<form action="/contact">
-					<fieldset>
-						<input type="text" placeholder="Name" name="name">
-						<input type="text" placeholder="nameandsurname@email.com" name="email">
-						<textarea placeolder="Say Hello!" name="message" id="" cols="30" rows="10"></textarea>
-						<button class="">Send</button>
-					</fieldset>
-				</form>
+				<h2 class="titles about">mia</h2>
+					<div class="about-mia">
+						<img src="./images/profile_picture.jpg" alt="about Mia picture" class="about-image">
+							<p class="about-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rerum ratione natus adipisci, autem saepe harum hic exercitationem sit. Eaque, expedita a corporis nobis consequuntur eveniet doloribus minus, inventore quam!</p>
+
+							<button class="blog" src="https://theyellowall.wordpress.com/">blog</button>
+					</div>
+
+
+			</div>
+		</section>
+
+
+
+		<section id="contact" class="contact">
+			<div class="container">		
+				<h2 class="titles contact">contact</h2>
+					<div class="container flex contact">
+						<div class="contact-info">
+							<hr>
+								<p class="contact-name">Mia Carulla Ferrer</h3>
+								<p class="contact-location">London / England</p>
+							<hr>
+								<i class="fas fa-envelope"></i>
+								<h4 class="email"><a href="email">mcarullaferrer@gmail.com</a></h4>
+								<i class="fas fa-mobile"></i>
+									<h4 class="en-phone">+44 74 72 180 776</h4>
+									<h4 class="es-phone">+34 630 414 719</h4>
+						</div>
+
+						<div class="contact-form">
+							<div id='wrapper'>
+							  <form action='' class='form'>
+							    <p class='field required half'>
+							      <label class='label required' for='name'>Name</label>
+							      <input class='text-input' id='name' name='name' required type='text'>
+							    </p>
+							    <p class='field required half'>
+							      <label class='label' for='email'>E-mail</label>
+							      <input class='text-input' id='email' name='email' required type='email'>
+							    </p>
+							    <p class='field'>
+							      <label class='label' for='message'>Message</label>
+							      <textarea class='textarea' cols='50' id='message' name='message' required rows='4'></textarea>
+							    </p>
+							    <p class='field'>
+							      <input class='button' type='submit' value='Send message'>
+							    </p>
+							  </form>
+							</div>
+						</div>
+					</div>
 			</div>
 		</section>
 
@@ -168,18 +187,15 @@
 		<footer class="social-media">
 			<div class="container">
 				<ul class="social">
-					<li class="icons">
-						<img src="" alt=""><a href="https://www.linkedin.com/in/mia-carulla-ferrer-48a395109/">Linkedin</a></li>
-					<li class="icons">
-						<img src="" alt=""><a href="https://www.instagram.com/theyellow_wall/">Instagram</a></li>
-					<li class="icons">
-						<img src="" alt=""><a href="https://twitter.com/MiaCarulla1">Twitter</a></li>
+					<li>
+						<i class="fab fa-linkedin"><a class="icons" href="https://www.linkedin.com/in/mia-carulla-ferrer-48a395109/"></a></i></li>
+					<li>
+						<i class="fab fa-instagram"><a class="icons" href="https://www.instagram.com/theyellow_wall/"></a></i></li>
+					<li>
+						<i class="fab fa-twitter-square"><a class="icons" href="https://twitter.com/MiaCarulla1"></a></i></li>
 				</ul>
 			</div>
 		</footer>
-
-
-
 		<script src="./js/jquery-3.3.1.min.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
