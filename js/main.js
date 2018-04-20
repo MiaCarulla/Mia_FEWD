@@ -47,11 +47,16 @@ $(function() {
 //       }
 //     }
 
+<<<<<<< HEAD
   // };
+=======
+//   };
+>>>>>>> master
 
 //   // initialize
 //   window.floatingLabel = new floatingLabel(document.querySelector('.form'));
 
+<<<<<<< HEAD
 // }).call(this);
 
 
@@ -60,3 +65,6 @@ $(function() {
 	$('.fas.fa-bars.active').on('click', function() {
 		$('nav').toggleClass('active');
 	});
+=======
+// }).call(this);
+>>>>>>> master
