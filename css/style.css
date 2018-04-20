@@ -118,18 +118,20 @@ header{
   box-shadow: 0px 4px 4px -1px rgba(227,227,227,1);
 }
 
-header nav ul{
+nav ul{
   display:flex;
 	justify-content:center;
 	flex-flow: row wrap;
-  justify-content:space-around;
+/*  flex-direction:row;
+*/  justify-content:space-around;
 }
 
+i.fas.fa-bars{
+  display:none;
+}
 
 ul{
-/*   border-bottom: 20px;
-*/
-margin:0;
+  margin:0;
 }
 
 li{
@@ -161,6 +163,8 @@ img.logo {
   width:50%;
   height:50%;
 }
+
+
 
 /*******************
   PORTFOLIO
@@ -300,11 +304,16 @@ CONTACT
   
 }
 .container.flex.contact{
-  justify-content:space-between;
+  justify-content:center;
   padding:0;
   margin-bottom: 50px;
   padding-bottom: 100px;
   margin-top:0;
+}
+
+.contact-info{
+ /* width:500px;*/
+  justify-content:center;
 }
 
 p.contact-name{
@@ -314,14 +323,14 @@ p.contact-name{
   letter-spacing:3px;
 }
 
-.contact-form{
+/*.contact-form{
       width: 500px;
 
-}
+}*/
 
 hr{
-    width: 50px;
-    border: 2px solid #fcd272;
+/*    width: 50px;
+*/    border: 2px solid #fcd272;
     margin:30px;
 }
 
@@ -329,11 +338,13 @@ h4.email a, h4.en-phone, h4.es-phone{
     margin-top: 0px;
     margin-bottom: 0px;
     font-weight:300;
+    margin:0;
 }
 
 h4.email a:hover{
     color:#fcd272;
     transition:0.5s;
+
 }
 
 form{
@@ -353,7 +364,7 @@ i.fas.fa-mobile, i.fas.fa-envelope{
 /*******************
  FORM
  *******************/
-
+/*
       .form .text-input, .form .textarea, .form .label, .form .button {
         padding: 1em 1.5em;
         -webkit-appearance: none;
@@ -367,7 +378,7 @@ i.fas.fa-mobile, i.fas.fa-envelope{
 
       .form .text-input, .form .textarea {
         /*font: inherit;*/
-        line-height: normal;
+/*        line-height: normal;
         width: 100%;
         box-sizing: border-box;
         display: block;
@@ -437,7 +448,7 @@ i.fas.fa-mobile, i.fas.fa-envelope{
 
       .form .button {
        /* font: inherit;*/
-        line-height: normal;
+        /*line-height: normal;
         cursor: pointer;
         background-color: black;
         color: white;
@@ -467,31 +478,7 @@ i.fas.fa-mobile, i.fas.fa-envelope{
         width: 100%;
         margin-bottom: 1.5em;
         float: left;
-      }
-      @media screen and (min-width: 40em) {
-        .form .field.half {
-          width: calc(50% - 2em);
-          margin-right: 2em;
-        }
-        .form .field.half + .half {
-          margin-left: 2em;
-          margin-right: 0;
-        }
-      }
-      .form .field:last-child {
-        float: right;
-        width: auto;
-      }
-      .form .textarea {
-        max-width: 100%;
-      }
-
-      svg path {
-        fill: black;
-      }
-
- 
-
+      }/*/
 
 /*******************
 FOOTER
@@ -520,4 +507,51 @@ i:hover{
   color:#fcd272;
   transition:0.5s;
   cursor:pointer;
+}
+
+
+/*******************
+MEDIA QUERIES
+*******************/
+
+/*@media screen and (min-width: 40em) {
+        .form .field.half {
+          width: calc(50% - 2em);
+          margin-right: 2em;
+        }
+        .form .field.half + .half {
+          margin-left: 2em;
+          margin-right: 0;
+        }
+      }
+      .form .field:last-child {
+        float: right;
+        width: auto;
+      }
+      .form .textarea {
+        max-width: 100%;
+      }
+
+      svg path {
+        fill: black;
+}*/
+
+@media screen and (min-width:400px) {
+ 
+/*  i.fa-bars.active{
+    display:inline-block;
+    color:#fcd272;
+    padding:20px;
+  }
+
+   header nav ul li{
+    flex-direction:column;
+  }
+*/
+}
+
+
+@media screen and (min-width:600px) {
+  
+
 }
