@@ -2,6 +2,8 @@
 $(function() {
 	$("nav a").click(function() {
 		var element = $(this).attr("href");
+// when href selected, highlight it in bold 
+		$("href")
 
 	    $('html, body').animate({
 	        scrollTop: $(element).offset().top - 42

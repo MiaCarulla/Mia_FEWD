@@ -121,7 +121,7 @@ nav ul{
 	justify-content:center;
 	flex-flow: row wrap;
 /*  flex-direction:row;
-*/  justify-content:space-around;
+*/justify-content:space-around;
 }
 
 i.fas.fa-bars{
@@ -438,29 +438,32 @@ MEDIA QUERIES
 *******************/
 
 @media screen and (min-width:400px) {
- 
-/*  i.fa-bars.active{
+/* 
+  i.fa-bars.active{
     display:inline-block;
     color:#fcd272;
     padding:20px;
   }
-
-   header nav ul li{
-    flex-direction:column;
-  }
 */
   
- /* h2.titles.portfolio{
+  h2.titles.portfolio{
    display:inline-block;
    position:relative;
    transform: translate:;
+  }
+  
+/*  nav ul{
+    flex-direction:column;
+  }*/
+
+/*  h2.other-title{
+
+  }
+
+  .about.mia{
+    flex-direction:column;
   }*/
 
 
 }
 
-
-@media screen and (min-width:600px) {
-  
-
-}
